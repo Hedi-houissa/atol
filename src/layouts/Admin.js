@@ -25,11 +25,11 @@ export default function Admin() {
     
       {/* <Sidebar /> */}
     
-      <div className="relative w-full xl:w-12/12 ">
+      <div className="relative w-full xl:w-12/12  ">
         <AdminNavbar />
         {/* Header */}
         <HeaderStats />
-        <div className="px-4 md:px-10 mx-auto w-full -m-24">
+        <div className="px-4 md:px-10 mx-auto w-full -m-24 ">
           <Switch>
             <Route path="/admin/dashboard" exact component={Dashboard} />
             <Route path="/admin/maps" exact component={Maps} />

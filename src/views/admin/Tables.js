@@ -22,25 +22,25 @@ export default function Tables() {
   const color = "dark";
   return (
     <>
-      <div className="flex flex-wrap mt-4 "  style={{marginTop:'10rem'}}>
-        <div className="w-full mb-12 px-4">{/* <CardTable /> */}</div>
-        <div className="w-full mb-12 px-4">
+      <div className="flex justify-center flex-wrap mt-4 " style={{ marginTop: "10rem" }}>
+        <div className="w-full lg:w-8/12 mb-12 px-4">{/* <CardTable /> */}</div>
+        <div className="w-full lg:w-8/12 mb-12 px-4">
           <div
             className={
               "relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded " +
               (color === "light" ? "bg-white" : "bg-lightBlue-600 text-white")
             }
           >
-            <div className="rounded-t mb-0 px-4 py-3 border-0">
+            <div className="rounded-t mb-0 px-4 py-3 border-0 bg-white">
               <div className="flex flex-wrap items-center">
                 <div className="relative w-full px-4 max-w-full flex-grow flex-1">
                   <h3
                     className={
-                      "font-semibold text-lg " +
-                      (color === "light" ? "text-blueGray-600" : "text-white")
+                      "font-semibold text-2xl " +
+                      (color === "light" ? "text-blueGray-600" : "text-blueGray-600")
                     }
                   >
-                    Liste des établissement  
+                    Liste des établissement
                   </h3>
                 </div>
               </div>
@@ -50,6 +50,16 @@ export default function Tables() {
               <table className="items-center w-full bg-transparent border-collapse">
                 <thead>
                   <tr>
+                    <th
+                      className={
+                        "px-6 align-middle border border-solid py-3 text-xm uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left " +
+                        (color === "light"
+                          ? "bg-blueGray-50 text-blueGray-500 border-blueGray-100"
+                          : "bg-lightBlue-800 text-lightBlue-300 border-lightBlue-700")
+                      }
+                    >
+                      Nom d'utilisateur
+                    </th>
                     <th
                       className={
                         "px-6 align-middle border border-solid py-3 text-xm uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left " +
@@ -130,9 +140,12 @@ export default function Tables() {
                                 : "text-white")
                             }
                           >
-                            {c.social_reason}
+                            {c.username}
                           </span>
                         </th>
+                        <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xm whitespace-nowrap p-4">
+                          {c.social_reason}
+                        </td>
                         <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xm whitespace-nowrap p-4">
                           {c.representative}
                         </td>
@@ -149,10 +162,9 @@ export default function Tables() {
                         </td>
                         <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xm whitespace-nowrap p-4">
                           <div className="flex items-center">
-                          {c.social_state}
+                            {c.social_state}
                           </div>
                         </td>
-                        
                       </tr>
                     </>
                   ))}

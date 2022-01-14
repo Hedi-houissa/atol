@@ -8,9 +8,9 @@ export default function Navbar() {
     JSON.parse(localStorage.getItem("token"))
   );
   return (
-    <>
+    < div className="justify-center lg:w-8/12">
       {/* Navbar */}
-      <nav className="absolute top-0 left-0 w-full z-10 bg-transparent md:flex-row md:flex-nowrap md:justify-start flex items-center p-4">
+      <nav className="absolute  top-0 left-0 w-full z-10 bg-transparent md:flex-row md:flex-nowrap md:justify-start flex items-center p-4">
         <div className="w-full mx-autp items-center flex justify-between md:flex-nowrap flex-wrap md:px-10 px-4">
           {/* Brand */}
           <a
@@ -57,6 +57,6 @@ export default function Navbar() {
         </div>
       </nav>
       {/* End Navbar */}
-    </>
+    </div>
   );
 }
