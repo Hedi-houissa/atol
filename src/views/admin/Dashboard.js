@@ -3,10 +3,9 @@ import QRCode from "qrcode";
 import "./card.css";
 // components
 
-import liste from "../../assets/img/landing.jpg"
-import convention from "../../assets/img/profile.jpg"
-import add from "../../assets/img/addone.jpg"
-
+import liste from "../../assets/img/landing.jpg";
+import convention from "../../assets/img/profile.jpg";
+import add from "../../assets/img/addone.jpg";
 
 export default function Dashboard() {
   const [currentuser, setcurrentuser] = useState(
@@ -38,43 +37,36 @@ export default function Dashboard() {
       <div className="flex flex-wrap ">
         {currentuser.roles === "ADMIN" ? (
           <>
-            <div className="w-full xl:w-3/12 mb-12 xl:mb-0 px-4"
-            onClick={()=>window.location.href="/admin/list"}
+            <div
+              className="w-full xl:w-3/12 mb-12 xl:mb-0 px-4"
+              onClick={() => (window.location.href = "/admin/list")}
             >
               <div className="profile-card-4 text-center">
-                <img
-                  src={liste}
-                  alt=""
-                  className="img img-responsive"
-                />
+                <img src={liste} alt="" className="img img-responsive" />
                 <div className="profile-content">
-                
                   <div className="profile-description">
-                  <div className="font-bold text-xl text-black">
-                  Liste des établissement
-                  </div>
+                    <div className="font-bold text-xl text-black">
+                      Liste des établissement
+                    </div>
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                     diam nonumy eirmod tempor.
                   </div>
                 </div>
               </div>
             </div>
-            <div className="w-full xl:w-3/12 mb-12 xl:mb-0 px-4"
-            
-            onClick={()=>window.location.href="/admin/Ajouter_etablissement"}
+            <div
+              className="w-full xl:w-3/12 mb-12 xl:mb-0 px-4"
+              onClick={() =>
+                (window.location.href = "/admin/Ajouter_etablissement")
+              }
             >
               <div className="profile-card-4 text-center">
-                <img
-                  src={add}
-                  alt=""
-                  className="img img-responsive"
-                />
+                <img src={add} alt="" className="img img-responsive" />
                 <div className="profile-content">
-                 
                   <div className="profile-description">
-                  <div className="font-bold text-xl text-black">
-                    Ajouter un établissement
-                  </div>
+                    <div className="font-bold text-xl text-black">
+                      Ajouter un établissement
+                    </div>
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                     diam nonumy eirmod tempor.
                   </div>
@@ -83,17 +75,12 @@ export default function Dashboard() {
             </div>
             <div className="w-full xl:w-3/12 mb-12 xl:mb-0 px-4">
               <div className="profile-card-4 text-center">
-                <img
-                  src={convention}
-                  alt=""
-                  className="img img-responsive"
-                />
+                <img src={convention} alt="" className="img img-responsive" />
                 <div className="profile-content">
-                  
                   <div className="profile-description">
-                  <div className="font-bold text-xl text-black" >
-                    Liste des convention
-                  </div>
+                    <div className="font-bold text-xl text-black">
+                      Liste des convention
+                    </div>
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                     diam nonumy eirmod tempor.
                   </div>
@@ -103,7 +90,10 @@ export default function Dashboard() {
           </>
         ) : (
           <>
-             <div className="w-full xl:w-4/12 mb-12 xl:mb-0 px-4">
+            <div
+              className="w-full xl:w-4/12 mb-12 xl:mb-0 px-4"
+              onClick={() => (window.location.href = "/company/list")}
+            >
               <div className="profile-card-4 text-center">
                 <img
                   src="http://envato.jayasankarkr.in/code/profile/assets/img/profile-4.jpg"
@@ -122,7 +112,9 @@ export default function Dashboard() {
                 </div>
               </div>
             </div>
-            <div className="w-full xl:w-4/12 mb-12 xl:mb-0 px-4">
+            <div className="w-full xl:w-4/12 mb-12 xl:mb-0 px-4" 
+             onClick={() => (window.location.href = "/company/add")}
+            >
               <div className="profile-card-4 text-center">
                 <img
                   src="http://envato.jayasankarkr.in/code/profile/assets/img/profile-4.jpg"
@@ -131,7 +123,7 @@ export default function Dashboard() {
                 />
                 <div className="profile-content">
                   <div className="profile-name">
-                   Ajouter une socitété
+                    Ajouter une socitété
                     <p>en réduisant votre budget</p>
                   </div>
                   <div className="profile-description">
@@ -142,7 +134,7 @@ export default function Dashboard() {
                 </div>
               </div>
             </div>
-           
+
             <div className="w-full xl:w-4/12 mb-12 xl:mb-0 px-4">
               <div className="profile-card-4 text-center">
                 <img
@@ -155,14 +147,10 @@ export default function Dashboard() {
                     Convention
                     <p>Afficher</p>
                   </div>
-                  <div className="profile-description">
-                    Télécharger
-                  </div>
+                  <div className="profile-description">Télécharger</div>
                 </div>
               </div>
             </div>
-
-         
           </>
         )}
       </div>

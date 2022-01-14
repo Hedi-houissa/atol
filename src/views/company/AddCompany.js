@@ -65,7 +65,7 @@ export default function AddCompany() {
             <div className="bg-blueGray-100 rounded-t bg-white mb-0 px-6 py-6 ">
               <div className="  text-center flex justify-between ">
                 <h6 className="text-blueGray-700 text-xl font-bold">
-                  Ajouter un établissement
+                  Ajouter une société
                 </h6>
                 <small style={{ color: "red" }}>{errors.msg}</small>
                 {/* <button
@@ -82,60 +82,9 @@ export default function AddCompany() {
                   Information de l'utilisateur
                 </h6> */}
                 <div className="flex flex-wrap">
-                  <div className="w-full lg:w-4/12 px-4">
-                    <div className="relative w-full mb-3">
-                      <label
-                        className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                        htmlFor="grid-password"
-                      >
-                        Nom d'utilisateur
-                      </label>
-                      <input
-                        name="username"
-                        onChange={change}
-                        type="text"
-                        className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                        defaultValue="nom d'utilisateur"
-                      />
-                      <small style={{ color: "red" }}>{errors.username}</small>
-                    </div>
-                  </div>
-                  <div className="w-full lg:w-4/12 px-4">
-                    <div className="relative w-full mb-3">
-                      <label
-                        className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                        htmlFor="grid-password"
-                      >
-                        Mot de passe
-                      </label>
-                      <input
-                        name="password"
-                        onChange={change}
-                        type="password"
-                        className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                        defaultValue="*************"
-                      />
-                      <small style={{ color: "red" }}>{errors.password}</small>
-                    </div>
-                  </div>
-                  <div className="w-full lg:w-4/12 px-4">
-                    <div className="relative w-full mb-3">
-                      <label
-                        className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                        htmlFor="grid-password"
-                      >
-                        Confirmer le mot de passe
-                      </label>
-                      <input
-                        name="cpassword"
-                        onChange={changepass}
-                        type="password"
-                        className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                        defaultValue="*************"
-                      />
-                      <small style={{ color: "red" }}>{errors.cpassword}</small>
-                    </div>
-                  </div>
+                  
+                  
+                  
                 </div>
 
                 {/* <hr className="mt-6 border-b-1 border-blueGray-300" /> */}
@@ -144,7 +93,7 @@ export default function AddCompany() {
                   Contact Information
                 </h6> */}
 
-                {/* <div className="flex flex-wrap">
+                <div className="flex flex-wrap">
                   <div className="w-full lg:w-4/12 px-4">
                     <div className="relative w-full mb-3">
                       <label
@@ -271,6 +220,46 @@ export default function AddCompany() {
                         className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                         htmlFor="grid-password"
                       >
+                        Siren
+                      </label>
+                      <input
+                        name="siren"
+                        onChange={change}
+                        type="text"
+                        className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                        defaultValue="14253698745896"
+                      />
+                      <small style={{ color: "red" }}>
+                        {errors.siren}
+                      </small>
+                    </div>
+                  </div>
+                  <div className="w-full lg:w-4/12 px-4">
+                    <div className="relative w-full mb-3">
+                      <label
+                        className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                        htmlFor="grid-password"
+                      >
+                        ITN
+                      </label>
+                      <input
+                        name="itn"
+                        onChange={change}
+                        type="text"
+                        className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                        defaultValue="14253698745896"
+                      />
+                      <small style={{ color: "red" }}>
+                        {errors.itn}
+                      </small>
+                    </div>
+                  </div>
+                  <div className="w-full lg:w-4/12 px-4">
+                    <div className="relative w-full mb-3">
+                      <label
+                        className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                        htmlFor="grid-password"
+                      >
                         Cram
                       </label>
                       <input
@@ -282,6 +271,26 @@ export default function AddCompany() {
                       />
                       <small style={{ color: "red" }}>
                         {errors.cram}
+                      </small>
+                    </div>
+                  </div>
+                  <div className="w-full lg:w-4/12 px-4">
+                    <div className="relative w-full mb-3">
+                      <label
+                        className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                        htmlFor="grid-password"
+                      >
+                        Avocat
+                      </label>
+                      <input
+                        name="avocat"
+                        onChange={change}
+                        type="text"
+                        className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                        defaultValue="région"
+                      />
+                      <small style={{ color: "red" }}>
+                        {errors.avocat}
                       </small>
                     </div>
                   </div>
@@ -336,7 +345,7 @@ export default function AddCompany() {
                       </small>
                     </div>
                   </div>
-                </div> */}
+                </div>
 
                 {/* <hr className="mt-6 border-b-1 border-blueGray-300" />
 

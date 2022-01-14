@@ -16,6 +16,8 @@ import Settings from "views/admin/Settings.js";
 import Tables from "views/admin/Tables.js";
 import AddEtablissement from "views/admin/AddEtablissement";
 import EditEtablissement from "views/admin/EditEtablissement";
+import AddCompany from "views/company/AddCompany";
+import ListeCompany from "views/company/ListeCompany";
 // import Mypdf from "views/admin/Mypdf";
 
 export default function Admin() {
@@ -37,6 +39,8 @@ export default function Admin() {
             <Route path="/admin/Ajouter_etablissement" exact component={AddEtablissement} />
             <Route path="/admin/modifier_profile" exact component={EditEtablissement} />
             <Route path="/admin/list" exact component={Tables} />
+            <Route path="/company/add" exact component={AddCompany}   />
+            <Route path="/company/list" exact component={ListeCompany}   />
             {/* <Route path="/admin/pdf" exact component={Mypdf} /> */}
 
             <Redirect from="/admin" to="/admin/dashboard" />
