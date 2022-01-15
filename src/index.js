@@ -18,6 +18,8 @@ import Landing from "views/Landing.js";
 import Profile from "views/Profile.js";
 import Index from "views/Index.js";
 import store from "js/store/store";
+import AddCompany from "views/company/AddCompany";
+import ListeCompany from "views/company/ListeCompany";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -28,6 +30,7 @@ ReactDOM.render(
       <Route path="/admin" component={Admin} />
       <Route path="/auth" component={Auth} />
       {/* add routes without layouts */}
+     
       <Route path="/landing" exact component={Landing} />
       <Route path="/profile" exact component={Profile} />
       <Route path="/" exact component={Index} />

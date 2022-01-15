@@ -107,7 +107,7 @@ export default function AddCompany() {
                         onChange={change}
                         type="text"
                         className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                        defaultValue="Danya"
+                        placeholder="respansable "
                       />
                       <small style={{ color: "red" }}>
                         {errors.representative}
@@ -127,7 +127,7 @@ export default function AddCompany() {
                         onChange={change}
                         type="text"
                         className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                        defaultValue="Atol"
+                        placeholder="Atol"
                       />
                       <small style={{ color: "red" }}>
                         {errors.social_reason}
@@ -147,7 +147,7 @@ export default function AddCompany() {
                         onChange={change}
                         type="text"
                         className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                        defaultValue="Paris"
+                        placeholder="Paris"
                       />
                       <small style={{ color: "red" }}>
                         {errors.city}
@@ -167,7 +167,7 @@ export default function AddCompany() {
                         onChange={change}
                         type="text"
                         className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                        defaultValue="75000"
+                        placeholder="75000"
                       />
                       <small style={{ color: "red" }}>
                         {errors.posat_code}
@@ -187,7 +187,7 @@ export default function AddCompany() {
                         onChange={change}
                         type="text"
                         className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                        defaultValue="Rue paris"
+                        placeholder="Rue paris"
                       />
                       <small style={{ color: "red" }}>
                         {errors.address}
@@ -207,7 +207,7 @@ export default function AddCompany() {
                         onChange={change}
                         type="text"
                         className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                        defaultValue="14253698745896"
+                        placeholder="14253698745896"
                       />
                       <small style={{ color: "red" }}>
                         {errors.siret}
@@ -227,7 +227,7 @@ export default function AddCompany() {
                         onChange={change}
                         type="text"
                         className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                        defaultValue="14253698745896"
+                        placeholder="14253698745896"
                       />
                       <small style={{ color: "red" }}>
                         {errors.siren}
@@ -247,7 +247,7 @@ export default function AddCompany() {
                         onChange={change}
                         type="text"
                         className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                        defaultValue="14253698745896"
+                        placeholder="14253698745896"
                       />
                       <small style={{ color: "red" }}>
                         {errors.itn}
@@ -267,7 +267,7 @@ export default function AddCompany() {
                         onChange={change}
                         type="text"
                         className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                        defaultValue="région"
+                        placeholder="région"
                       />
                       <small style={{ color: "red" }}>
                         {errors.cram}
@@ -287,7 +287,7 @@ export default function AddCompany() {
                         onChange={change}
                         type="text"
                         className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                        defaultValue="région"
+                        placeholder="région"
                       />
                       <small style={{ color: "red" }}>
                         {errors.avocat}
@@ -364,7 +364,7 @@ export default function AddCompany() {
                       <textarea
                         type="text"
                         className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                        defaultValue="A beautiful UI Kit and Admin for React & Tailwind CSS. It is Free and Open Source."
+                        placeholder="A beautiful UI Kit and Admin for React & Tailwind CSS. It is Free and Open Source."
                         rows="4"
                       ></textarea>
                     </div>

@@ -40,7 +40,7 @@ export default function ListeCompany() {
                       (color === "light" ? "text-blueGray-600" : "text-blueGray-600")
                     }
                   >
-                    Liste des établissement
+                    Liste des sociétés
                   </h3>
                 </div>
               </div>

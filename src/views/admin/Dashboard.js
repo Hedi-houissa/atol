@@ -90,68 +90,56 @@ export default function Dashboard() {
           </>
         ) : (
           <>
-            <div
-              className="w-full xl:w-4/12 mb-12 xl:mb-0 px-4"
-              onClick={() => (window.location.href = "/company/list")}
-            >
-              <div className="profile-card-4 text-center">
-                <img
-                  src="http://envato.jayasankarkr.in/code/profile/assets/img/profile-4.jpg"
-                  alt=""
-                  className="img img-responsive"
-                />
-                <div className="profile-content">
-                  <div className="profile-name">
-                    Liste des société
-                    <p>@johndoedesigner</p>
+          <div
+            className="w-full xl:w-3/12 mb-12 xl:mb-0 px-4"
+            onClick={() => (window.location.href = "/admin/company/list")}
+          >
+            <div className="profile-card-4 text-center">
+              <img src={liste} alt="" className="img img-responsive" />
+              <div className="profile-content">
+                <div className="profile-description">
+                  <div className="font-bold text-xl text-black">
+                    Liste des sociétés
                   </div>
-                  <div className="profile-description">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                    diam nonumy eirmod tempor.
-                  </div>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor.
                 </div>
               </div>
             </div>
-            <div className="w-full xl:w-4/12 mb-12 xl:mb-0 px-4" 
-             onClick={() => (window.location.href = "/company/add")}
-            >
-              <div className="profile-card-4 text-center">
-                <img
-                  src="http://envato.jayasankarkr.in/code/profile/assets/img/profile-4.jpg"
-                  alt=""
-                  className="img img-responsive"
-                />
-                <div className="profile-content">
-                  <div className="profile-name">
-                    Ajouter une socitété
-                    <p>en réduisant votre budget</p>
+          </div>
+          <div
+            className="w-full xl:w-3/12 mb-12 xl:mb-0 px-4"
+            onClick={() => (window.location.href = "/admin/company/add")}
+          >
+            <div className="profile-card-4 text-center">
+              <img src={add} alt="" className="img img-responsive" />
+              <div className="profile-content">
+                <div className="profile-description">
+                  <div className="font-bold text-xl text-black">
+                    Ajouter une société
                   </div>
-                  <div className="profile-description">
-                    Le cabinet de conseil et accompagnement IT Danya Conseil,
-                    aide les entreprises à améliorer la productivité de leurs
-                    équipes informatiques et de leurs processus métiers.
-                  </div>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor.
                 </div>
               </div>
             </div>
-
-            <div className="w-full xl:w-4/12 mb-12 xl:mb-0 px-4">
-              <div className="profile-card-4 text-center">
-                <img
-                  src="http://envato.jayasankarkr.in/code/profile/assets/img/profile-4.jpg"
-                  alt=""
-                  className="img img-responsive"
-                />
-                <div className="profile-content">
-                  <div className="profile-name">
+          </div>
+          <div className="w-full xl:w-3/12 mb-12 xl:mb-0 px-4">
+            <div className="profile-card-4 text-center">
+              <img src={convention} alt="" className="img img-responsive" />
+              <div className="profile-content">
+                <div className="profile-description">
+                  <div className="font-bold text-xl text-black">
                     Convention
-                    <p>Afficher</p>
                   </div>
-                  <div className="profile-description">Télécharger</div>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor.
                 </div>
               </div>
             </div>
-          </>
+          </div>
+        </>
+         
         )}
       </div>
     </>

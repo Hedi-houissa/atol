@@ -39,8 +39,8 @@ export default function Admin() {
             <Route path="/admin/Ajouter_etablissement" exact component={AddEtablissement} />
             <Route path="/admin/modifier_profile" exact component={EditEtablissement} />
             <Route path="/admin/list" exact component={Tables} />
-            <Route path="/company/add" exact component={AddCompany}   />
-            <Route path="/company/list" exact component={ListeCompany}   />
+            <Route path="/admin/company/add" exact component={AddCompany}   />
+            <Route path="/admin/company/list" exact component={ListeCompany}   />
             {/* <Route path="/admin/pdf" exact component={Mypdf} /> */}
 
             <Redirect from="/admin" to="/admin/dashboard" />
